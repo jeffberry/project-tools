@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+use PortOneFive\ProjectTools\Application;
+
+require __DIR__ . '/vendor/autoload.php';
+
+$app = new Application(__DIR__);
+
+$app->bootstrap();
+$app->run();
+
+/*$ssh = new Illuminate\Remote\Connection('xenreviews', 'xenreviews.com', 'root', ['password' => 'qwexw']);
+
+var_dump($ssh->status());
+$ssh->run('pwd', function($output)
+{
+    echo $output;
+});*/

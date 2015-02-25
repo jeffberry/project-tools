@@ -1,0 +1,28 @@
+{
+    "name": "jeffberry/project-tools",
+    "description": "Port One Five : Project Management Tools",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Jeff Berry",
+            "email": "jeff@portonefive.com"
+        }
+    ],
+    "bin": [
+        "portonefive"
+    ],
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "PortOneFive\\ProjectTools\\" : "src/"
+        }
+    },
+    "require": {
+        "symfony/console": "~2.6",
+        "illuminate/remote": "~5.0",
+        "vlucas/phpdotenv": "~1.1",
+        "symfony/finder": "~2.6"
+    }
+}
